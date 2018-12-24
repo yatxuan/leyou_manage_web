@@ -17,6 +17,7 @@ public interface BaseDao<T extends BaseEntity> extends MyMapper<T> {
 
     T selectByPrimaryKeyO(Long id);
 
+    @Override
     List<T> selectAll();
 
     int updateByPrimaryKeyO(T record);
