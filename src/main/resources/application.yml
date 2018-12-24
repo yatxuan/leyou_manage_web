@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 3600S
+spring:
+  # MySQL 数据库连接信息
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/leyou?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 578754452
+  # redis 数据库连接信息
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  data:
+    mongodb:
+      host: 127.0.0.1
+      database: recruitdb
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.xuan.springappinfo.pojo
+
+#logging:
+#  level:
+#    com.xuan.springappinfo.mapper: debug
+
+json:
+  class-type: json
