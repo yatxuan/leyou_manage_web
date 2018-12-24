@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("TbUser")
 public class TbUserController extends BaseController<TbUser, TbUserServiceImpl> {
 
+    @Override
     @Autowired
     public void setService(TbUserServiceImpl service){
         super.setService(service);
