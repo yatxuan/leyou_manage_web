@@ -2,6 +2,8 @@ package com.calabashbrothers.common.redis;
 
 import lombok.extern.slf4j.Slf4j;
 import com.alibaba.fastjson.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
@@ -19,10 +21,9 @@ import java.util.concurrent.TimeUnit;
  * @Time: 12:51
  */
 @Service("redisService")
-@Slf4j
 public class RedisServiceImpl implements RedisService {
 
-
+    protected final Logger log = LoggerFactory.getLogger(getClass());
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
