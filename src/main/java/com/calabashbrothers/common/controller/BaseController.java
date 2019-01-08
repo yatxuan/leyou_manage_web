@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * @author Administrator
+ */
 @RestController
 public abstract class BaseController<T  extends BaseEntity,Service extends BaseService<T>> {
 

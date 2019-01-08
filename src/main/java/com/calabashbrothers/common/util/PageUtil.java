@@ -33,8 +33,8 @@ public class PageUtil {
     }
 
     public PageUtil(int currNo, int size) {
-        this.currNo = currNo == 0 ? 1 : currNo > this.totalCurrNo ? this.totalCurrNo : currNo;
-        this.size = size == 0 ? 15 : size;
+        this.currNo = currNo;
+        this.size = size;
     }
 
     public int getCurrNo() {

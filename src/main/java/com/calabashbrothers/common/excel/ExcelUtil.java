@@ -166,7 +166,7 @@ public class ExcelUtil {
             }
         }
         ems = map.get(maxkey);
-        List<Integer> widths = new ArrayList<Integer>(ems.size());
+        List<Integer> widths = new ArrayList<>(ems.size());
         for(Map<String,Object> obj : objs){
             XSSFRow row = sheet.createRow(rowindex);
             for(int i=0;i<ems.size();i++){

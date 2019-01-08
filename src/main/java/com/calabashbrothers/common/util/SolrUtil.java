@@ -288,7 +288,9 @@ public class SolrUtil {
      */
     private void setVal(Object bean, String val, Class<?> type, Field f) {
         try {
-            if(StringUtils.isBlank(val) || "null".equals(val))return;
+            if(StringUtils.isBlank(val) || "null".equals(val)) {
+                return;
+            }
             if (type == Byte.class || type == byte.class) {
                 f.set(bean, val.getBytes());
             } else if (type == Short.class || type == short.class) {

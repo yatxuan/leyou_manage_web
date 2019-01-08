@@ -8,6 +8,7 @@ import tk.mybatis.mapper.common.MySqlMapper;
 
 /**
  * 基础DAO
+ * @author Administrator
  */
 public interface BaseDao<T extends BaseEntity> extends Mapper<T>, MySqlMapper<T> {
 
